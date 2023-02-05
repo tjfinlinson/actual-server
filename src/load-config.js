@@ -1,7 +1,7 @@
 let userConfig;
 let fs = require('fs');
-let { join } = require('path');
-let root = fs.existsSync('/data') ? '/data' : __dirname;
+let { join, dirname } = require('path');
+let root = fs.existsSync('/data') ? '/data' : dirname(__dirname);
 
 if (process.env.ACTUAL_CONFIG_PATH) {
   userConfig = require(process.env.ACTUAL_CONFIG_PATH);

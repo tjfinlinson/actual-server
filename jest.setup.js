@@ -1,6 +1,6 @@
 const fs = require('fs');
 const { join } = require('path');
-const { getAccountDb } = require('./account-db');
+const { getAccountDb } = require('./src/account-db');
 const config = require('./load-config');
 
 // Delete previous test database (force creation of a new one)
